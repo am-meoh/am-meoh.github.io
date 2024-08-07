@@ -53,7 +53,7 @@ app.use(function (err, req, res, next) {
     error: process.env.NODE_ENV !== 'production' ? err : {}
   });
 });
-
+console.log(config, process.env)
 http.createServer(app)
   .listen(port, () => {
     console.log(`Listening on ${config.baseURL}`);
