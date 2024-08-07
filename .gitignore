@@ -3,7 +3,8 @@ node_modules
 dist
 *.local
 coverage/
-.env*
+.env
+.env.json
 .env.ci
 *.iml
 storybook-static
