@@ -1,5 +1,6 @@
 {
   "name": "@meoh/user-registry",
+  "type": "commonjs",
   "scripts": {
     "dev": "nodemon server.js"
   },
