@@ -3,13 +3,11 @@ const esmRequire = require("esm")(module);
 const twForms = require("@tailwindcss/forms")({
   strategy: "class",
 });
-const colors = esmRequire("./src/TailwindColors.js");
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      colors: colors.default,
       gridTemplateRows: {
         8: "repeat(8, minmax(0, 1fr))",
       },
