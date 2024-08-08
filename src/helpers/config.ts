@@ -7,9 +7,9 @@
 
 const CONFIGS = {
   [import.meta.env.VITE_LOCAL_DOMAIN]: {
-    AUTH0_DOMAIN: import.meta.env.VITE_AUTH0_DOMAIN,
-    AUTH0_CLIENT_ID: import.meta.env.VITE_CLIENT_ID,
-    AUTH0_AUDIENCE: import.meta.env.VITE_AUTH0_AUDIENCE,
+    AUTH0_DOMAIN: import.meta.env.VITE_AUTH0_DOMAIN || 'dev-zm8k7g0jntagspap.us.auth0.com',
+    AUTH0_CLIENT_ID: import.meta.env.VITE_CLIENT_ID || 'BnGaE7LXaRKG7ZA0hWN5cKZG3F9b3Zlb',
+    AUTH0_AUDIENCE: import.meta.env.VITE_AUTH0_AUDIENCE || 'https://meoh.api',
   },
 };
 
