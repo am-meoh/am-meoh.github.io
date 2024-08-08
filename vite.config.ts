@@ -5,6 +5,7 @@ import svgLoader from "vite-svg-loader";
 
 export default defineConfig({
   plugins: [vue(), svgLoader()],
+  base: "./",
   build: {
     chunkSizeWarningLimit: 1000,
     minify: true,
