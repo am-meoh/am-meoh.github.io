@@ -29,7 +29,7 @@ export default defineConfig({
   },
   server: {
     host: "0.0.0.0",
-    port: parseInt(process.env.VITE_PROXY_PORT) || 4041,
+    port: 3000,
     proxy: {},
     watch: {
       usePolling: true,
