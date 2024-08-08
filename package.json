@@ -1,6 +1,7 @@
 {
   "name": "@meoh/user-registry",
   "version": "0.0.1",
+  "type": "module",
   "engines": {
     "node": "20.x",
     "npm": "10.x"
