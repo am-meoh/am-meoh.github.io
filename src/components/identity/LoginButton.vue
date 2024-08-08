@@ -1,6 +1,6 @@
 <template>
   <button
-    class="flex items-center text-white text-2xl bg-indigo-600 px-4 rounded-md p-2"
+    class="bg-transparent hover:bg-white text-white hover:text-black text-xl py-2 px-8 mr-4 hover:border-transparent rounded"
     @click="handleLogin"
   >
     Log In

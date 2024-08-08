@@ -1,16 +1,27 @@
 <template>
-  <div class="flex h-screen justify-center px-6 py-24 sm:py-32 lg:px-8">
-    <div class="flex flex-col items-center mt-4">
-      <h1 class="text-4xl sm:text-5xl font-bold mb-4">
-        Welcome to MeÖH App
-      </h1>
-      <LoginButton v-if="!isAuthenticated" />
+  <div class="flex justify-center overflow-auto px-6 lg:px-8 py-6 sm:py-8">
+    <div class="flex flex-col items-center">
+      <img
+        class="mt-4 h-auto max-w-full"
+        src="../assets/img/1-mission_vision.jpeg"
+        alt="MeOH Mission and Vision"
+      />
+      <img
+        class="mt-4 h-auto max-w-full"
+        src="../assets/img/2-what_we_do.jpeg"
+        alt="What We Do"
+      />
+      <img
+        class="mt-4 h-auto max-w-full"
+        src="../assets/img/3-why_maritime.jpeg"
+        alt="Why Maritime?"
+      />
+      <img
+        class="mt-4 h-auto max-w-full"
+        src="../assets/img/4-how_to_solve.jpeg"
+        alt="How To Solve"
+      />
     </div>
   </div>
 </template>
-<script setup lang="ts">
-import LoginButton from "@components/identity/LoginButton.vue";
-import { useAuth0 } from "@auth0/auth0-vue";
-
-const { isAuthenticated } = useAuth0();
-</script>
+<script setup lang="ts"></script>
