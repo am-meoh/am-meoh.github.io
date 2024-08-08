@@ -8,14 +8,14 @@
   <div class="flex items-center">
     <button
       v-if="isAuthenticated"
-      class="ml-8 w-200 bg-transparent hover:bg-white text-white hover:text-black py-2 px-4 hover:border-transparent rounded"
+      class="bg-transparent hover:bg-white text-white hover:text-black py-2 px-8 mr-4 hover:border-transparent rounded"
     >
       <a href="/home">Home</a>
     </button>
 
     <button
       v-if="isAuthenticated"
-      class="ml-8 w-200 bg-transparent hover:bg-white text-white hover:text-black py-2 px-4 hover:border-transparent rounded"
+      class="bg-transparent hover:bg-white text-white hover:text-black py-2 px-8 mr-4 hover:border-transparent rounded"
     >
       <a href="/profile">My Profile</a>
     </button>
