@@ -1,4 +1,5 @@
 <template>
+  <!-- HEADER & BODY  -->
   <div class="min-h-screen bg-slate-200">
     <div v-if="isLoading" class="flex items-center justify-center">
       <LoadingSpinner />
@@ -9,6 +10,7 @@
     </div>
   </div>
 
+  <!-- FOOTER  -->
   <footer class="flex items-center justify-center bg-indigo-800 h-16 pr-5">
     <div class="text-white">Copyright © MeOH</div>
   </footer>
