@@ -1,26 +1,26 @@
 <template>
-  <!-- HEADER & BODY  -->
-  <div class="h-[95.8vh] bg-slate-200">
-    <div v-if="isLoading" class="flex items-center justify-center">
-      <LoadingSpinner />
-    </div>
-    <div v-else>
+  <div class="flex flex-col min-h-screen">
+    <header class="sticky z-50 top-0 p-4">
       <GlobalHeader />
-      <router-view v-if="!isLoading" />
-    </div>
-  </div>
+    </header>
 
-  <!-- FOOTER  -->
-  <footer class="flex items-center justify-center bg-indigo-800 h-16 pr-5">
-    <div class="text-white">Copyright © MeOH</div>
-  </footer>
+    <div class="flex-grow">
+      <main>
+        <router-view v-if="!isLoading" />
+      </main>
+    </div>
+
+    <footer class="sticky z-50 bottom-0 p-4">
+      <Footer />
+    </footer>
+  </div>
 </template>
 
 <script setup lang="ts">
 import { useAuth0 } from "@auth0/auth0-vue";
 
+import Footer from "@components/Footer.vue";
 import GlobalHeader from "@components/GlobalHeader.vue";
-import LoadingSpinner from "@components/LoadingSpinner.vue";
 
 const { isLoading } = useAuth0();
 </script>
