@@ -1,6 +1,6 @@
 <template>
   <!-- HEADER & BODY  -->
-  <div class="min-h-screen bg-slate-200">
+  <div class="h-[95.8vh] bg-slate-200">
     <div v-if="isLoading" class="flex items-center justify-center">
       <LoadingSpinner />
     </div>

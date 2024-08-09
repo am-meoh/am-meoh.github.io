@@ -11,7 +11,7 @@
     <!-- CONDITIONAL NAVIGATION -->
     <div v-if="isAuthenticated" class="flex items-center">
       <!-- <TopNavigation /> -->
-       <LogoutButtonWithProfile v-if="isAuthenticated" />
+      <LogoutButtonWithProfile v-if="isAuthenticated" />
     </div>
 
     <!-- CONDITIONAL LOGIN -->
@@ -24,7 +24,7 @@
 <script setup lang="ts">
 import { useAuth0 } from "@auth0/auth0-vue";
 
-import LoginButton from "@components/identity/LoginButton.vue"
+import LoginButton from "@components/identity/LoginButton.vue";
 import TopNavigation from "@components/TopNavigation.vue";
 import LogoutButtonWithProfile from "@components/identity/LogoutButtonWithProfile.vue";
 
