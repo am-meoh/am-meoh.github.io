@@ -8,8 +8,8 @@ Netlify Deploy Issue
 
 
 Netlify Refresh or Links not working
-https://stackoverflow.com/questions/58065603/netlify-renders-404-on-page-refresh-using-react-and-react-router
-
+- https://stackoverflow.com/questions/58065603/netlify-renders-404-on-page-refresh-using-react-and-react-router
+- https://docs.netlify.com/routing/redirects/#basic-redirects
 
 
 

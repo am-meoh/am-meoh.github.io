@@ -30,5 +30,5 @@ import TopNavigation from "@components/TopNavigation.vue";
 import LogoutButtonWithProfile from "@components/identity/LogoutButtonWithProfile.vue";
 
 const { isAuthenticated } = useAuth0();
-const showTopNavigation = ref(false);
+const showTopNavigation = ref(true);
 </script>
