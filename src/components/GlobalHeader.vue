@@ -23,9 +23,9 @@
       <LogoutButtonWithProfile v-if="isAuthenticated" />
     </div>
 
-    <div v-else class="flex items-center">
+    <!-- <div v-else class="flex items-center">
       <LoginButton v-if="!isAuthenticated" />
-    </div>
+    </div> -->
   </header>
 </template>
 
