@@ -8,6 +8,10 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      backgroundImage: {
+        'meoh-logo': "url('./src/assets/img/meoh.jpeg')",
+        'meoh-icon': "url('./src/assets/img/logo-small.ico')",
+      },
       gridTemplateRows: {
         8: "repeat(8, minmax(0, 1fr))",
       },

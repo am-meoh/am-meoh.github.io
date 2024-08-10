@@ -1,11 +1,11 @@
 <template>
-  <div class="flex flex-col items-center px-6 lg:px-8 py-6 sm:py-32">
+  <div class="flex flex-col items-center px-6 lg:px-8 py-6 sm:py-32 ">
     <img
       class="mt-4 h-auto max-w-full"
       src="../assets/img/logo-small.ico"
       alt="MeOH Mission and Vision"
     />
-    <h2 class="mb-16 font-light tracking-tight text-xl sm:text-xl font-mono">
+    <h2 class="mb-16 font-light tracking-tight text-xl sm:text-xl text-slate-600 font-mono">
       Bridge between electron and molecule
     </h2>
 
