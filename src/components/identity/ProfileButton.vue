@@ -2,7 +2,7 @@
   <Menu as="div" class="relative inline-block text-left">
     <div>
       <MenuButton
-        class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+        class="hidden sm:inline-flex justify-center gap-x-3 rounded-md p-4 text-sm text-pop-secondary hover:bg-secondary"
       >
         <img
           class="inline-block h-6 w-6 rounded-full"
@@ -11,12 +11,27 @@
         />
         {{ user?.name }}
         <ChevronDownIcon
-          class="-mr-1 h-5 w-5 text-gray-600"
+          class="-mr-1 h-5 w-5 text-pop-secondary"
           aria-hidden="true"
         />
       </MenuButton>
+      <MenuButton class="sm:hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-[30px] text-pop-primary"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </MenuButton>
     </div>
-
     <transition
       enter-active-class="transition ease-out duration-100"
       enter-from-class="transform opacity-0 scale-95"
@@ -26,28 +41,20 @@
       leave-to-class="transform opacity-0 scale-95"
     >
       <MenuItems
-        class="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+        class="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-secondary shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
       >
-        <div class="px-4 py-3">
-          <p class="text-sm">Signed in as</p>
-          <p class="truncate text-sm font-medium text-gray-900">
-            {{ user?.email }}
-          </p>
-        </div>
-        <div class="py-1">
-          <MenuItem v-slot="{ active }">
-            <button
-              type="submit"
-              @click="handleLogout"
-              :class="[
-                active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                'block w-full px-4 py-2 text-left text-sm',
-              ]"
-            >
-              Sign out
-            </button>
-          </MenuItem>
-        </div>
+        <MenuItem v-slot="{ active }">
+          <button
+            type="submit"
+            @click="handleLogout"
+            :class="[
+              active ? 'bg-primary text-pop-secondary' : 'text-base',
+              'block w-full px-4 py-3 text-right text-sm',
+            ]"
+          >
+            Sign out
+          </button>
+        </MenuItem>
       </MenuItems>
     </transition>
   </Menu>

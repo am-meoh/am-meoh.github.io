@@ -1,9 +1,16 @@
 <template>
   <div
-    class="flex h-full items-center justify-center align-middle mt-12 text-3xl"
+    v-if="!isLoading"
+    class="flex h-full items-center justify-center align-middle text-xl sm:text-2xl"
   >
-    My Profile Details
+    <p class="max-w-[300px] sm:max-w-full text-center">
+      Hello {{ user.name }}. You are Profiled In!
+    </p>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useAuth0 } from "@auth0/auth0-vue";
+
+const { user, isLoading } = useAuth0();
+</script>

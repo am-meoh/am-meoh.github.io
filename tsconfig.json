@@ -29,5 +29,10 @@
     "types": ["vite/client", "node"],
     "allowSyntheticDefaultImports": true
   },
-  "include": ["**/*.ts", "**/*.vue"]
+  "include": [
+    "**/*.ts",
+    "**/*.vue",
+    "../../meoh/meoh-frontend/src/views/LandingPageAvatars.vue",
+    "../../meoh/meoh-frontend/src/views/LandingPageRow.vue"
+  ]
 }

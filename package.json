@@ -1,5 +1,5 @@
 {
-  "name": "@meoh/user-registry",
+  "name": "@afshan/lazer.io",
   "version": "0.0.1",
   "type": "module",
   "engines": {
@@ -20,8 +20,10 @@
     "@auth0/auth0-vue": "^2.3.3",
     "@headlessui/vue": "^1.7.22",
     "@heroicons/vue": "^2.1.5",
+    "@vueuse/core": "^11.1.0",
     "esm": "^3.2.25",
     "path": "^0.12.7",
+    "pinia": "^2.2.4",
     "tailwindcss": "^3.4.8",
     "vite-svg-loader": "^5.1.0",
     "vue": "^3.4.36",
@@ -42,6 +44,8 @@
     "eslint-plugin-tailwindcss": "^3.17.4",
     "eslint-plugin-vue": "^9.27.0",
     "postcss": "^8.4.41",
+    "sass-embedded": "^1.78.0",
+    "tw-colors": "^3.3.2",
     "typescript": "^5.5.4",
     "vite": "^5.4.0"
   }

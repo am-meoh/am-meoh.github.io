@@ -1,5 +1,5 @@
 <template>
-  <footer class="p-4 bg-indigo-800 rounded">
+  <footer class="p-4 rounded border-t-2">
     <div
       class="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8"
     >
@@ -8,7 +8,7 @@
           v-for="item in navigation"
           :key="item.name"
           :href="item.href"
-          class="text-gray-400 hover:text-gray-500"
+          class="text-pop-primary hover:text-pop-secondary"
           target="_blank"
         >
           <span class="sr-only">{{ item.name }}</span>
@@ -16,8 +16,8 @@
         </a>
       </div>
       <div class="mt-8 md:order-1 md:mt-0">
-        <p class="text-center text-s leading-5 text-gray-400">
-          &copy; 2024 MeÖH, Inc. All rights reserved.
+        <p class="text-center text-s leading-5 text-normal font-mono">
+          &copy; 2024 Company, Inc. All rights reserved.
         </p>
       </div>
     </div>
@@ -44,7 +44,7 @@ const navigation = [
   },
   {
     name: "LinkedIn",
-    href: "https://www.linkedin.com/company/meohinc/",
+    href: "https://www.linkedin.com/company/XXXXX/",
     icon: defineComponent({
       render: () =>
         h("svg", { fill: "currentColor", viewBox: "0 0 448 512" }, [
@@ -58,7 +58,7 @@ const navigation = [
   },
   {
     name: "X",
-    href: "#",
+    href: "https://x.com/XXXXX",
     icon: defineComponent({
       render: () =>
         h("svg", { fill: "currentColor", viewBox: "0 0 24 24" }, [
@@ -70,7 +70,7 @@ const navigation = [
   },
   {
     name: "GitHub",
-    href: "#",
+    href: "https://github.com/XXXXXX",
     icon: defineComponent({
       render: () =>
         h("svg", { fill: "currentColor", viewBox: "0 0 24 24" }, [
@@ -84,7 +84,7 @@ const navigation = [
   },
   {
     name: "YouTube",
-    href: "#",
+    href: "https://www.youtube.com/XXXXX",
     icon: defineComponent({
       render: () =>
         h("svg", { fill: "currentColor", viewBox: "0 0 24 24" }, [

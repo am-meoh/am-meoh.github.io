@@ -1,5 +1,5 @@
 <template>
-  <svg class="animate-spin h-12 w-12 text-indigo-600" viewBox="0 0 24 24">
+  <svg class="animate-spin h-12 w-12 text-normal" viewBox="0 0 24 24">
     <circle
       class="opacity-25"
       cx="12"
